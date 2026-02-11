@@ -6,6 +6,7 @@
       dockerfile: Project498.WebApi/Dockerfile
     environment:
       - ConnectionStrings__DefaultConnection=Host=db;Database=project498;Username=postgres;Password=postgres
+      - ASPNETCORE_ENVIRONMENT=Development
     depends_on:
       db:
         condition: service_healthy
@@ -27,4 +28,3 @@
       timeout: 3s
       retries: 30
       start_period: 5s
-
