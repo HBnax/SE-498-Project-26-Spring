@@ -41,3 +41,15 @@ GET {{HostAddress}}/strings/reverse/hello%20world%20
 Accept: application/json
 
 ###
+
+# Users - Get all
+GET {{HostAddress}}/api/users
+Accept: application/json
+
+###
+
+# Users - Get by ID
+GET {{HostAddress}}/api/users/1
+Accept: application/json
+
+###
